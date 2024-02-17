@@ -1,0 +1,84 @@
+#home{
+    position: fixed;
+    z-index: 100;
+    opacity: 80%;
+}
+/* #about, #client, #products, #contact{
+    margin-top: 3vh;
+} */
+
+#about{
+    /* background-image: url('./assets/light-gray-low-contrast-texture-260nw-background.jpg');
+    border-image: fill 0 linear-gradient(#0001,#000);
+    width: 100%;
+    height: 100%;
+    object-fit: contain; */
+    /* opacity: 50%; */
+}
+.slides {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.brands {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.brand_item {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+.brand_item:first-child {
+    align-self: flex-start;
+}
+
+.brand_item:nth-child(2) {
+    align-self: center;
+}
+
+.brand_item:last-child {
+    align-self: flex-end;
+}
+
+@media only screen and (min-width: 600px) {
+    .brands {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .brand_item {
+        width: calc(100% / 3); /* Show 3 items in a row */
+        max-width: 300px; /* Adjust the max-width as needed */
+    }
+}
+
+@media only screen and (min-width:768px){
+    .md\:py-12{
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+    }
+    #contact{
+        padding-top: 4rem;
+    }
+    /* .md\:px-12{
+        margin-top: 8rem;
+    } */
+}
+@media (min-width: 640px){
+.sm\:pt-20 {
+    padding-top: 6rem;
+}
+.pt-16 {
+    padding-top: 6rem;
+}
+
+}
